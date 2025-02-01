@@ -15,16 +15,21 @@
         gap: 10px;
         align-items: unset;
         background-color: #fff;
-        padding: 20px;
+        padding: 32px;
+    }
+    &__detail_title{
+        font-size: 24px;
+        margin: 0;
+        padding: 14px 0 32px 0;
     }
     &__detail_img{
-        width: 100%;
+        width: 680px;
     }
     &__detail_info{
         width: 50%;
     }
     &__detail_btn{
-        width: 100%;
+        width:85%;
         background-color: $ml-blue;
         color: $ml-white;
         border: none;
@@ -34,6 +39,8 @@
         font-weight: 600;
         height: 48px;
         line-height: 48px;
+        border-radius: 4px;
+        margin-right: 32px;
     }
     &__detail_btn:hover{
         background-color: $ml-blue-600;
@@ -42,25 +49,29 @@
         transition: background-color .2s ease-in;
     }
     &__detail_price{
-        font-size: 36px;
-        line-height: 24px;
+        font-size: 46px;
         font-weight: 400;
+        margin: 0;
+        margin-bottom: 32px;
     }
     &__detail_description{
+        padding: 32px;
         h3{
-        font-size: 36px;
-        line-height: 24px;
+        font-size: 28px;
         font-weight: 400;
+        margin: 0;
         }
         p{
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 16px;
             font-weight: 400;
+            color: $ml-gray;
+            margin: 32px 0;
+            max-width: 70%;
         }
     }
     &__detail_condition{
-        width: 30%;
         text-align: center;
         color: $ml-gray;
+        font-size: 14px;
     }
 }

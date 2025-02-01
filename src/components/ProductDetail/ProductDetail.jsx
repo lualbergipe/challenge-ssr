@@ -19,7 +19,7 @@ function ProductDetail({ item }) {
         <img className={styles.product__detail_img} src={picture} alt={title} />
         <div className={styles.product__detail_info}>
           <span className={styles.product__detail_condition}>{condition === 'new' ? 'Nuevo' : 'Usado'} - {sold_quantity} vendidos</span>
-          <h1 className={styles.product_title}>{title}</h1>
+          <h1 className={styles.product__detail_title}>{title}</h1>
           <h2 className={styles.product__detail_price}>{formattedPrice}</h2>
           <button className={styles.product__detail_btn} onClick={()=> handleBuyClick()}>Comprar</button>
         </div>

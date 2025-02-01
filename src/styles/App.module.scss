@@ -24,7 +24,6 @@ html{
     }
 
     + * {
-        margin-top: $spacing-20;
         margin-bottom: $spacing-20;
     }
 
@@ -34,17 +33,14 @@ html{
     }
 }
 
-
 .home__container{
     text-align: center;
 }
-.body-content {
-    padding: $spacing-48;
-}
+
 
 .breadcrumb {
    
-    height: $spacing-40;
+    padding: 16px;
     color: $ml-gray;
 
     &__item {

@@ -5,7 +5,7 @@ function Breadcrumb({ categories = [] }) {
   return (
     <nav className={styles.breadcrumb}>
       {categories.map((cat, idx) => (
-        <span key={idx} className="breadcrumb__item">
+        <span key={idx} className={styles.breadcrumb__item}>
           {cat}
           {idx < categories.length - 1 && ' > '}
         </span>

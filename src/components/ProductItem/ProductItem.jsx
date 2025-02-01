@@ -11,8 +11,8 @@ function ProductItem({ item, onClick }) {
     <div className={styles.product__item} onClick={onClick}>
       <img className={styles.product__img} src={picture} alt={title} />
       <div className={styles.product__detail}>
-        <h2>{formattedPrice} {free_shipping && <img src={free} alt="envío gratis" />}</h2>
-        <p>{title}</p>
+        <h2 className={styles.product__price}>{formattedPrice} {free_shipping && <img src={free} alt="envío gratis" />}</h2>
+        <p className={styles.product__title}>{title}</p>
       </div>
       <span className={styles.product__condition}>{condition}</span>
     </div>
