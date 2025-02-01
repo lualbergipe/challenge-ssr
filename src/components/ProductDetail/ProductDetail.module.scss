@@ -1,0 +1,66 @@
+@use '../../styles/base' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/App.module' as *;
+
+
+.product{
+    &__detail_container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__detail_content{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: unset;
+        background-color: #fff;
+        padding: 20px;
+    }
+    &__detail_img{
+        width: 100%;
+    }
+    &__detail_info{
+        width: 50%;
+    }
+    &__detail_btn{
+        width: 100%;
+        background-color: $ml-blue;
+        color: $ml-white;
+        border: none;
+        cursor: pointer;
+        transition: box-shadow .25s ease-out, background-color .2s ease-out;
+        font-size: 16px;
+        font-weight: 600;
+        height: 48px;
+        line-height: 48px;
+    }
+    &__detail_btn:hover{
+        background-color: $ml-blue-600;
+        border-color: transparent;
+        color: #fff;
+        transition: background-color .2s ease-in;
+    }
+    &__detail_price{
+        font-size: 36px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    &__detail_description{
+        h3{
+        font-size: 36px;
+        line-height: 24px;
+        font-weight: 400;
+        }
+        p{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+    &__detail_condition{
+        width: 30%;
+        text-align: center;
+        color: $ml-gray;
+    }
+}

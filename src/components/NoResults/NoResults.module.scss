@@ -1,0 +1,27 @@
+@use '../../styles/base' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/App.module' as *;
+
+.no__results_container {
+  align-items: center;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: center;
+  margin: 110px auto 430px;
+  max-width: 1018px;
+  min-height: 204px;
+  display: flex;
+  flex-direction: row;
+  
+    h2 {
+      font-size: 2rem;
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    .return{
+      color: $ml-blue;
+    }
+  }
+  

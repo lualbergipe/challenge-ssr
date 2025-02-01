@@ -1,0 +1,112 @@
+@use 'variables' as *;
+@use 'base' as *;
+
+
+
+html{
+    background-color: $ml-light-gray;
+  }
+  .ml__centered {
+    @include centerer;
+  }
+.header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: $ml-yellow;
+    @media (max-width: 768px) {
+        display: flex;
+        height: 80px;
+    }
+
+    + * {
+        margin-top: $spacing-20;
+        margin-bottom: $spacing-20;
+    }
+
+    &__logo {
+        padding-top: $spacing-8;
+        padding-right: 34px;
+    }
+}
+
+
+.home__container{
+    text-align: center;
+}
+.body-content {
+    padding: $spacing-48;
+}
+
+.breadcrumb {
+   
+    height: $spacing-40;
+    color: $ml-gray;
+
+    &__item {
+       font-size: 14px;
+       line-height: 20px;
+       font-weight: 400;
+    }
+}
+
+.product-body {
+    display: inline-flex;
+    margin-top: 10px;
+
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    min-width: 680px;
+}
+
+
+.product-resume {
+    padding: $spacing-32;
+}
+
+.product-resume p small {
+    padding: 0 4px;
+}
+
+.product_title {
+    margin: $spacing-16 0 $spacing-32;
+    font-size: 24px;
+
+}
+
+.description__h3 {
+    padding: $spacing-32;
+    font-size: 28px;
+
+}
+
+.description__p {
+    font-size: $spacing-16;
+    padding-bottom: $spacing-32;
+}
+
+
+.meli-breadcrum-list-item
+{
+
+    &:after {
+        content: "  > "
+    }
+    &:last-child:after {
+        content: '';
+    }
+}
+
+.h1__welcome {
+    margin-top: $spacing-64;
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+@use '../../styles/base' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/App.module' as *;
+
+.product__list{
+    background-color: $ml-white;
+    
+}

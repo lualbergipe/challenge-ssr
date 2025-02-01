@@ -1,0 +1,51 @@
+@use '../../styles/base' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/App.module' as *;
+
+  
+  .header {
+    position: relative;
+  
+    &__container {
+      @include centerer;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+  }
+  
+
+  
+  .search {
+    display: inline-block;
+    border-radius: 4px;
+    overflow: hidden;
+  
+    &__input {
+      border: 0px;
+      width: 680px;
+      font-size: 18px;
+      padding: 8px 12px;
+      position: relative;
+      color: $ml-gray;
+
+      @media (max-width: 768px) {
+        width: auto;
+      }
+  
+      &::placeholder {
+        color: $ml-light-gray;
+        opacity: 1;
+      }
+    }
+  
+    &__button {
+      border: 0px;
+      padding: 9px 8px 7px 10px;
+      position: relative;
+      color: $ml-gray;
+      vertical-align: bottom;
+    }
+  }
+  

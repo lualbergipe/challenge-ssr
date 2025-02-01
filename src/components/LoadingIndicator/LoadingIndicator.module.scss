@@ -1,0 +1,36 @@
+@use '../../styles/base' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/App.module' as *;
+
+.loading__indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+  
+    &_spinner {
+      width: 48px;
+      height: 48px;
+      margin: 16px;
+      border: 4px solid #f3f3f3;        // color claro de fondo
+      border-top: 4px solid $ml-yellow;    // color amarillo MercadoLibre
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: $ml-gray;;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
